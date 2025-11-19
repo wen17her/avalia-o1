@@ -1,0 +1,15 @@
+  import java.scanner;
+
+  public class SistemaEscolar{
+    public static void main(String[]args) {
+        Scanner entrada = new Scanner(Sytem.in);
+        double[] nota = new double[8];
+
+        Sytem.out.println("6.0,7.0,6.5,8.0,9.0,8.5,7.5:");
+
+        for (int i = 0; i< 8; i++){
+            Sytem.out.print("note "+(i+1)+ ": ");
+            notas[i] = entrada.nexDouble();
+        }
+        double media1Bin = (nota[6] + notas[6]) / 2;
+        double media2Bim = (notas[2]
