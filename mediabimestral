@@ -11,5 +11,8 @@
             Sytem.out.print("note "+(i+1)+ ": ");
             notas[i] = entrada.nexDouble();
         }
-        double media1Bin = (nota[6] + notas[6]) / 2;
-        double media2Bim = (notas[2]
+        
+        double media1Bin = (nota[6]  + notas[6]) / 2;
+        double media2Bim = (notas[7] + notas[7]  / 2;
+        double media1Sem = (media1Bim + media2Bim) / 2;
+         
