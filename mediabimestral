@@ -1,18 +1,44 @@
-  import java.scanner;
+public class SistemaEscolar{
+    public static void main(String[] args) {
 
-  public class SistemaEscolar{
-    public static void main(String[]args) {
-        Scanner entrada = new Scanner(Sytem.in);
-        double[] nota = new double[8];
+        // 1º bimestre
+        double nota1_Bim1 = 6.0;
+        double nota2_Bim1 = 6.0;
 
-        Sytem.out.println("6.0,7.0,6.5,8.0,9.0,8.5,7.5:");
+        // 2º bimestre
+        double nota1_Bim2 = 7.0;
+        double nota2_Bim2 = 7.0;
 
-        for (int i = 0; i< 8; i++){
-            Sytem.out.print("note "+(i+1)+ ": ");
-            notas[i] = entrada.nexDouble();
-        }
-        
-        double media1Bin = (nota[6]  + notas[6]) / 2;
-        double media2Bim = (notas[7] + notas[7]  / 2;
-        double media1Sem = (media1Bim + media2Bim) / 2;
-         
+        // 3º bimestre
+        double nota1_Bim3 = 8.0;
+        double nota2_Bim3 = 8.0;
+
+        // 4º bimestre
+        double nota1_Bim4 = 9.0;
+        double nota2_Bim4 = 9.0;
+
+        double mediaBim1 = (nota1_Bim1 + nota2_Bim1) / 2.0;
+        double mediaBim2 = (nota1_Bim2 + nota2_Bim2) / 2.0;
+        double mediaBim3 = (nota1_Bim3 + nota2_Bim3) / 2.0;
+        double mediaBim4 = (nota1_Bim4 + nota2_Bim4) / 2.0;
+
+        double mediaSem1 = (mediaBim1 + mediaBim2) / 2.0;
+        double mediaSem2 = (mediaBim3 + mediaBim4) / 2.0;
+
+        double mediaFinal = (mediaSem1 + mediaSem2) / 2.0;
+
+
+
+        System.out.println("--- RESULTADOS ---");
+        System.out.println("1º Bimestre: " + mediaBim1);
+        System.out.println("2º Bimestre: " + mediaBim2);
+        System.out.println("1º Semestre: " + mediaSem1);
+        System.out.println("----------");
+        System.out.println("3º Bimestre: " + mediaBim3);
+        System.out.println("4º Bimestre: " + mediaBim4);
+        System.out.println("2º Semestre: " + mediaSem2);
+        System.out.println("----------");
+        System.out.println("Média Final: " + mediaFinal);
+        System.out.println("------------------");
+    }
+}
